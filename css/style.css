@@ -19,6 +19,9 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #5a3c36 85.61%);
+    box-shadow: 0 0 15px #303030;
+
 }
 
 .cabecalho-imagem {
@@ -34,14 +37,20 @@ gap: 60px;
     font-family: 'Sarala', sans-serif;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 26px;
+    transition: color 300ms, transform 300ms;
+    cursor: pointer;
+}
+.cabecalho-menu-item:hover {
+    color: rgba(236, 214, 196, 0.53);
+    transform: scale(1.05);
 }
 
 .conteudo {
     margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
+    /* border-top: 0.4px solid #FFF2E7; */
     padding-right: 100px;
-    padding-left: 100px
+    padding-left: 100px;
 }
 
 .conteudo-principal {
@@ -78,20 +87,40 @@ gap: 60px;
     Width: 180px;
     Height: 60px;
     border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #2F2325 ;
+    color: #2F2325;
+    transition: transform 400ms;
+    cursor: pointer;
+    position: relative;
 }
-
+.coteudo-principal-escrito-botao::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 14px;
+    background-color: #ECD6C4;
+    opacity: 0;
+    top: 0;
+    left: 9%;
+    border-radius: 6px;
+    transition: left 400ms, transform 400ms, opacity 100ms;
+}
 .coteudo-principal-escrito-botao:hover {
-    background-color: rgba(236, 214, 196, 0.53);
+    /* background-color: rgba(236, 214, 196, 0.53); */
+    transform: translateX(30px) ;
+}
+.coteudo-principal-escrito-botao:hover::before{
+    left: -10px;
+    transform: translateX(-100%);
+    opacity: 1;
 }
 
 .coteudo-principal-imagem {
-    height: 400px;
+    height: 500px;
 }
 
 .conteudo-secundario {
@@ -112,13 +141,46 @@ gap: 60px;
     margin-bottom: 16px;
 
 }
+@keyframes citation_anim {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 
+}
 .conteudo-secundario-paragrafo{
     font-family: 'Sarala', sans-serif;
     font-weight: 100;
     font-size: 18px;
-    color: #ECD6C4 
+    color: #ECD6C4;
+    animation: citation_anim 10s ease 0s infinite normal both;  
+}
 
+#p1 {
+    animation: citation_anim 10s ease 0s infinite normal both;  
+}
+#p2 {
+    animation: citation_anim 10s ease 2s infinite normal both;  
+}
+#p3 {
+    animation: citation_anim 10s ease 4s infinite normal both;  
+}
+#p4 {
+    animation: citation_anim 10s ease 6s infinite normal both;  
+}
+#p5 {
+    animation: citation_anim 10s ease 8s infinite normal both;  
 }
 
 .rodape {
