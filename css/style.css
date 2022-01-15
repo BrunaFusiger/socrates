@@ -25,19 +25,19 @@ body {
 }
 
 .cabecalho-imagem {
-    height: 150px;
+    height: 110px;
 }
 
 .cabecalho-menu {
 display: flex;
-gap: 60px;
+gap: 45px;
 }
 
 .cabecalho-menu-item {
     font-family: 'Sarala', sans-serif;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
     transition: color 300ms, transform 300ms;
     cursor: pointer;
 }
@@ -48,7 +48,6 @@ gap: 60px;
 
 .conteudo {
     margin-bottom: 48px;
-    /* border-top: 0.4px solid #FFF2E7; */
     padding-right: 100px;
     padding-left: 100px;
 }
@@ -65,33 +64,34 @@ gap: 60px;
 .coteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 35px;
 }
 
 .coteudo-principal-escrito-titulo {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 50px;
     color: #FFF2E7
 }
 
 .coteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #ECD6C4 ;
+    cursor: default;
 }
 
 .coteudo-principal-escrito-botao {
     background-color: #ECD6C4;
-    Width: 180px;
-    Height: 60px;
+    Width: 150px;
+    Height: 50px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #2F2325;
     transition: transform 400ms;
     cursor: pointer;
@@ -120,7 +120,7 @@ gap: 60px;
 }
 
 .coteudo-principal-imagem {
-    height: 500px;
+    height: 350px;
 }
 
 .conteudo-secundario {
@@ -141,6 +141,13 @@ gap: 60px;
     margin-bottom: 16px;
 
 }
+
+#paragrafos {
+    position: relative;
+    width: 60%;
+    height: 60px;
+}
+
 @keyframes citation_anim {
     0%{
         opacity: 0;
@@ -164,24 +171,27 @@ gap: 60px;
     font-weight: 100;
     font-size: 18px;
     color: #ECD6C4;
-    animation: citation_anim 10s ease 0s infinite normal both;  
+    position: absolute;
+    width: 100%;
+    text-align: center;
 }
 
 #p1 {
     animation: citation_anim 10s ease 0s infinite normal both;  
 }
 #p2 {
-    animation: citation_anim 10s ease 2s infinite normal both;  
+    animation: citation_anim 10s ease 2s infinite normal both;    
 }
 #p3 {
-    animation: citation_anim 10s ease 4s infinite normal both;  
+    animation: citation_anim 10s ease 4s infinite normal both;    
 }
 #p4 {
-    animation: citation_anim 10s ease 6s infinite normal both;  
+    animation: citation_anim 10s ease 6s infinite normal both;    
 }
 #p5 {
-    animation: citation_anim 10s ease 8s infinite normal both;  
+    animation: citation_anim 10s ease 8s infinite normal both;    
 }
+
 
 .rodape {
     padding: 32px;
@@ -190,7 +200,7 @@ gap: 60px;
 }
 
 .rodape-imagem{
-    height: 48px;
+    height: 35px;
     display: block;
     margin: 0 auto;
    /* padding-left: 100px;*/
