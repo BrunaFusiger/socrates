@@ -71,7 +71,8 @@ gap: 45px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 50px;
-    color: #FFF2E7
+    color: #FFF2E7;
+    cursor: default;
 }
 
 .coteudo-principal-escrito-subtitulo {
@@ -110,7 +111,6 @@ gap: 45px;
     transition: left 400ms, transform 400ms, opacity 100ms;
 }
 .coteudo-principal-escrito-botao:hover {
-    /* background-color: rgba(236, 214, 196, 0.53); */
     transform: translateX(30px) ;
 }
 .coteudo-principal-escrito-botao:hover::before{
@@ -129,6 +129,7 @@ gap: 45px;
     align-items: center;
     gap: 24px;
     margin-top: 48px; 
+    cursor: default;
 }
 
 .conteudo-secundario-titulo {
@@ -196,12 +197,10 @@ gap: 45px;
 .rodape {
     padding: 32px;
     border-top: 0.4px solid #FFF2E7;
-
 }
 
 .rodape-imagem{
     height: 35px;
     display: block;
     margin: 0 auto;
-   /* padding-left: 100px;*/
 }
