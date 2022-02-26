@@ -1,4 +1,2 @@
 # O que é isso
-Essa é minha primeira landing page sobre Sócrates.
-
-![foto do Sócrates](./imagens/fotosocrates.png)
+😁 Landing page sobre Sócrates feita com HTML e CSS. 😁
